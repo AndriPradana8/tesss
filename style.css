@@ -1,0 +1,71 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  height: 2000px;
+}
+/* navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.scrolling-active {
+  background-color: #062544;
+  padding: 15px 0;
+}
+
+/* hero */
+.hero {
+  height: 85vh;
+  background-color: #083563;
+}
+
+.hero img {
+  width: 300px;
+}
+
+.hero h1 span::before {
+  content: "";
+  animation: text-animate infinite 8s ease;
+  transform: translateY(-50%);
+  color: #0d6efd;
+}
+
+@keyframes text-animate {
+  0% {
+    content: "Andri Pradana";
+  }
+  50% {
+    content: "Front-End Developer";
+  }
+  100% {
+    content: "UI/UX Designer";
+  }
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #062544;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero img {
+    width: 200px;
+  }
+}
